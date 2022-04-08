@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Menú mobile</title>
+		<style>
+			:root {
+				--white: #ffffff;
+				--black: #000000;
+				--dark: #232830;
+				--very-light-pink: #c7c7c7;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--sm: 1.4rem;
+				--md: 1.6rem;
+				--lg: 1.8rem;
+			}
+
+			body {
+				font-family: 'Quicksand', sans-serif;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				font-size: 62.5%;
+			}
+
+			.menu {
+				height: 100vh;
+				width: 100%;
+				padding: 3.9rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				position: relative;
+			}
+
+			.close-menu {
+				height: 12px;
+				width: 12px;
+				/* background-color: #c7c7c7; */
+				position: absolute;
+				right: 18px;
+				top: 21px;
+			}
+
+			.menu li {
+				list-style: none;
+				margin-bottom: 3.7rem;
+			}
+
+			.link-button {
+				color: var(--hospital-green);
+				font-size: var(--sm);
+				cursor: pointer;
+				text-align: center;
+				text-decoration: none;
+				font-weight: bold;
+			}
+
+			.link-button:hover {
+				text-decoration: underline;
+			}
+
+			.link-button--bold {
+				color: var(--black);
+				font-size: var(--md);
+			}
+
+			.space-bar {
+				background-color: var(--text-input-field);
+				height: 1px;
+			}
+
+			.menu__email p {
+				font-size: var(--sm);
+				font-weight: 300;
+				margin-bottom: 0.6rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="menu">
+			<div class="close-menu">X</div>
+			<ul class="menu__categories">
+				<li>
+					<a class="link-button link-button--bold" href=""
+						>CATEGORIES</a
+					>
+				</li>
+				<li>
+					<a class="link-button link-button--bold" href="">All</a>
+				</li>
+				<li>
+					<a class="link-button link-button--bold" href="">Clothes</a>
+				</li>
+				<li>
+					<a class="link-button link-button--bold" href=""
+						>Electronics</a
+					>
+				</li>
+				<li>
+					<a class="link-button link-button--bold" href=""
+						>Furniture</a
+					>
+				</li>
+				<li>
+					<a class="link-button link-button--bold" href="">Toys</a>
+				</li>
+				<li>
+					<a class="link-button link-button--bold" href="">Others</a>
+				</li>
+				<li>
+					<div class="space-bar"></div>
+				</li>
+				<ul class="menu__user-account">
+					<li>
+						<a href="/" class="link-button link-button--bold"
+							>My orders</a
+						>
+					</li>
+					<li>
+						<a href="/" class="link-button link-button--bold"
+							>My account</a
+						>
+					</li>
+				</ul>
+			</ul>
+			<ul class="menu__email">
+				<p>camilayokoo@gmail.com</p>
+				<p>
+					<a class="link-button" href="">Sign out</a>
+				</p>
+			</ul>
+		</div>
+	</body>
+</html>
