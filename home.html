@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Home</title>
+		<style>
+			:root {
+				--white: #ffffff;
+				--black: #000000;
+				--dark: #232830;
+				--very-light-pink: #c7c7c7;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--sm: 1.4rem;
+				--md: 1.6rem;
+				--lg: 1.8rem;
+				--card-size: 21.6rem;
+			}
+
+			body {
+				font-family: 'Quicksand', sans-serif;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				font-size: 62.5%;
+			}
+
+			/* .main-container {
+				width: 100%;
+				height: 100vh;
+				display: grid;
+				place-items: center;
+			} */
+
+			.cards-container {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, var(--card-size));
+				place-content: center;
+				gap: 3rem 2.2rem;
+				padding: 3rem 0;
+			}
+
+			.card {
+				width: 100%;
+			}
+
+			.product-image {
+				border-radius: 20px;
+				height: var(--card-size);
+				width: var(--card-size);
+				overflow: hidden;
+				margin-bottom: 1.5rem;
+			}
+
+			.product-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+
+			.product-description {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.product-price {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+					Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+					'Helvetica Neue', sans-serif;
+				font-size: var(--md);
+				font-weight: bold;
+				color: var(--dark);
+			}
+
+			.product-name {
+				font-size: var(--sm);
+				font-weight: 400;
+				color: var(--very-light-pink);
+			}
+
+			@media (max-width: 640px) {
+				:root {
+					--card-size: 16.3rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<section class="main-container">
+			<div class="cards-container">
+				<div class="card">
+					<figure class="product-image">
+						<img
+							src="./assets/images/round-shelf.png"
+							alt="Round shelf"
+						/>
+					</figure>
+					<div class="product-description">
+						<div class="product-info">
+							<p class="product-price">$ 35,00</p>
+							<p class="product-name">Round shelf</p>
+						</div>
+						<img
+							src="/assets/icons/bt_add_to_cart.svg"
+							alt="Icon add to cart"
+							class="icon-add-to-cart"
+						/>
+					</div>
+				</div>
+
+				<div class="card">
+					<figure class="product-image">
+						<img
+							src="./assets/images/retro-refrigerator.png"
+							alt="Retro refrigerator"
+						/>
+					</figure>
+					<div class="product-description">
+						<div class="product-info">
+							<p class="product-price">$ 120,00</p>
+							<p class="product-name">Retro refrigerator</p>
+						</div>
+						<img
+							src="/assets/icons/bt_add_to_cart.svg"
+							alt="Icon add to cart"
+							class="icon-add-to-cart"
+						/>
+					</div>
+				</div>
+
+				<div class="card">
+					<figure class="product-image">
+						<img
+							src="./assets/images/round-shelf.png"
+							alt="Round shelf"
+						/>
+					</figure>
+					<div class="product-description">
+						<div class="product-info">
+							<p class="product-price">$ 35,00</p>
+							<p class="product-name">Round shelf</p>
+						</div>
+						<img
+							src="/assets/icons/bt_add_to_cart.svg"
+							alt="Icon add to cart"
+							class="icon-add-to-cart"
+						/>
+					</div>
+				</div>
+
+				<div class="card">
+					<figure class="product-image">
+						<img
+							src="./assets/images/retro-refrigerator.png"
+							alt="Retro refrigerator"
+						/>
+					</figure>
+					<div class="product-description">
+						<div class="product-info">
+							<p class="product-price">$ 120,00</p>
+							<p class="product-name">Retro refrigerator</p>
+						</div>
+						<img
+							src="/assets/icons/bt_add_to_cart.svg"
+							alt="Icon add to cart"
+							class="icon-add-to-cart"
+						/>
+					</div>
+				</div>
+				<div class="card">
+					<figure class="product-image">
+						<img
+							src="./assets/images/round-shelf.png"
+							alt="Round shelf"
+						/>
+					</figure>
+					<div class="product-description">
+						<div class="product-info">
+							<p class="product-price">$ 35,00</p>
+							<p class="product-name">Round shelf</p>
+						</div>
+						<img
+							src="/assets/icons/bt_add_to_cart.svg"
+							alt="Icon add to cart"
+							class="icon-add-to-cart"
+						/>
+					</div>
+				</div>
+
+				<div class="card">
+					<figure class="product-image">
+						<img
+							src="./assets/images/retro-refrigerator.png"
+							alt="Retro refrigerator"
+						/>
+					</figure>
+					<div class="product-description">
+						<div class="product-info">
+							<p class="product-price">$ 120,00</p>
+							<p class="product-name">Retro refrigerator</p>
+						</div>
+						<img
+							src="/assets/icons/bt_add_to_cart.svg"
+							alt="Icon add to cart"
+							class="icon-add-to-cart"
+						/>
+					</div>
+				</div>
+				<div class="card">
+					<figure class="product-image">
+						<img
+							src="./assets/images/round-shelf.png"
+							alt="Round shelf"
+						/>
+					</figure>
+					<div class="product-description">
+						<div class="product-info">
+							<p class="product-price">$ 35,00</p>
+							<p class="product-name">Round shelf</p>
+						</div>
+						<img
+							src="/assets/icons/bt_add_to_cart.svg"
+							alt="Icon add to cart"
+							class="icon-add-to-cart"
+						/>
+					</div>
+				</div>
+
+				<div class="card">
+					<figure class="product-image">
+						<img
+							src="./assets/images/retro-refrigerator.png"
+							alt="Retro refrigerator"
+						/>
+					</figure>
+					<div class="product-description">
+						<div class="product-info">
+							<p class="product-price">$ 120,00</p>
+							<p class="product-name">Retro refrigerator</p>
+						</div>
+						<img
+							src="/assets/icons/bt_add_to_cart.svg"
+							alt="Icon add to cart"
+							class="icon-add-to-cart"
+						/>
+					</div>
+				</div>
+				<div class="card">
+					<figure class="product-image">
+						<img
+							src="./assets/images/round-shelf.png"
+							alt="Round shelf"
+						/>
+					</figure>
+					<div class="product-description">
+						<div class="product-info">
+							<p class="product-price">$ 35,00</p>
+							<p class="product-name">Round shelf</p>
+						</div>
+						<img
+							src="/assets/icons/bt_add_to_cart.svg"
+							alt="Icon add to cart"
+							class="icon-add-to-cart"
+						/>
+					</div>
+				</div>
+
+				<div class="card">
+					<figure class="product-image">
+						<img
+							src="./assets/images/retro-refrigerator.png"
+							alt="Retro refrigerator"
+						/>
+					</figure>
+					<div class="product-description">
+						<div class="product-info">
+							<p class="product-price">$ 120,00</p>
+							<p class="product-name">Retro refrigerator</p>
+						</div>
+						<img
+							src="/assets/icons/bt_add_to_cart.svg"
+							alt="Icon add to cart"
+							class="icon-add-to-cart"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
