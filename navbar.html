@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Navbar</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			:root {
+				--white: #ffffff;
+				--black: #000000;
+				--dark: #232830;
+				--very-light-pink: #c7c7c7;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--sm: 1.4rem;
+				--md: 1.6rem;
+				--lg: 1.8rem;
+				--card-size: 21.6rem;
+			}
+
+			body {
+				font-family: 'Quicksand', sans-serif;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				font-size: 62.5%;
+			}
+
+			.navbar {
+				height: 5.4rem;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0 5rem;
+				box-shadow: 0px 2px 4px 0px #0000000c;
+				width: 100%;
+			}
+
+			.menu {
+				display: none;
+			}
+
+			.navbar__left {
+				display: flex;
+			}
+
+			.navbar__logo {
+				width: 14.3rem;
+			}
+
+			.navbar__menu {
+				display: flex;
+				margin-left: 5rem;
+			}
+
+			.navbar__menu li {
+				font-size: var(--md);
+				font-weight: bold;
+				list-style: none;
+				margin-right: 1rem;
+				padding: 0.5rem 1.5rem;
+			}
+
+			.navbar__menu li:hover {
+				border-radius: 10px;
+				color: var(--hospital-green);
+				outline: 1px solid var(--hospital-green);
+			}
+
+			.navbar-link {
+				color: var(--very-light-pink);
+				text-decoration: none;
+			}
+
+			.navbar__right {
+				display: flex;
+			}
+
+			.navbar__user-account {
+				display: flex;
+				align-items: center;
+				list-style: none;
+			}
+
+			.navbar__user-account a:first-child {
+				color: var(--black);
+				font-weight: 300;
+				font-size: var(--sm);
+				text-decoration: none;
+				padding: 0.5rem 0;
+				margin-right: 3rem;
+			}
+
+			.flechita {
+				transform: rotate(90deg);
+				margin-left: 1rem;
+			}
+
+			@media (max-width: 640px) {
+				.navbar {
+					padding: 0 2rem;
+				}
+
+				.menu {
+					display: block;
+				}
+
+				.navbar__menu {
+					display: none;
+				}
+
+				.user-account {
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar">
+			<img src="./assets/icons/icon_menu.svg" alt="menu" class="menu" />
+			<div class="navbar__left">
+				<img
+					src="./assets/logos/logo_yard_sale.svg"
+					alt="logo"
+					class="navbar__logo"
+				/>
+				<ul class="navbar__menu">
+					<a class="navbar-link" href=""> <li>All</li></a>
+					<a class="navbar-link" href=""> <li>Clothes</li></a>
+					<a class="navbar-link" href=""> <li>Electronics</li></a>
+					<a class="navbar-link" href=""> <li>Furniture</li></a>
+					<a class="navbar-link" href=""> <li>Toys</li></a>
+					<a class="navbar-link" href=""> <li>Others</li></a>
+				</ul>
+			</div>
+			<div class="navbar__right">
+				<ul class="navbar__user-account">
+					<a href=""
+						><li class="user-account">
+							camiayokoo@gmail.com
+							<img
+								class="flechita"
+								src="./assets/icons/flechita.svg"
+								alt=""
+							/></li
+					></a>
+					<a href="">
+						<li>
+							<img
+								src="./assets/icons/icon_shopping_cart_notification.svg"
+								alt="shopping cart"
+							/>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</nav>
+	</body>
+</html>
