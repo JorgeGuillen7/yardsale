@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>My orders</title>
+		<style>
+			:root {
+				--white: #ffffff;
+				--black: #000000;
+				--dark: #232830;
+				--very-light-pink: #c7c7c7;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--sm: 1.4rem;
+				--md: 1.6rem;
+				--lg: 1.8rem;
+				--card-size: 7.6rem;
+				--width-container: 40.5rem;
+			}
+
+			body {
+				font-family: 'Quicksand', sans-serif;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				font-size: 62.5%;
+			}
+
+			.my-order {
+				width: 100%;
+				height: 100vh;
+				display: grid;
+				place-items: center;
+			}
+
+			.my-order-container {
+				display: grid;
+				grid-template-rows: auto;
+				place-content: center;
+				gap: 2.4rem;
+				padding: 3rem 0;
+				width: var(--width-container);
+			}
+
+			.my-order-container h1 {
+				margin-bottom: 2.3rem;
+			}
+
+			.mini-card--total {
+				width: var(--width-container);
+				display: grid;
+				grid-template-columns: auto 1fr auto;
+				align-items: center;
+			}
+
+			.total-description .product-price {
+				margin-bottom: 0.12rem;
+			}
+
+			.product-name {
+				font-size: var(--sm);
+				font-weight: 400;
+				color: var(--very-light-pink);
+			}
+
+			.product-price {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+					Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+					'Helvetica Neue', sans-serif;
+				font-size: var(--md);
+				font-weight: bold;
+				color: var(--dark);
+				justify-self: flex-end;
+			}
+
+			.path-icon {
+				background: url('https://api.iconify.design/bx/chevron-right.svg?width=20&height=20')
+					no-repeat center center / contain;
+				margin: 1px solid #000;
+				width: 2rem;
+				height: 2rem;
+				opacity: 25%;
+				margin-left: 2rem;
+			}
+
+			@media (max-width: 640px) {
+				:root {
+					--width-container: 33.9rem;
+				}
+
+				.my-order-container h1 {
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="my-order">
+			<div class="my-order-container">
+				<h1>My orders</h1>
+				<div class="mini-card mini-card--total">
+					<div class="total-description">
+						<p class="product-price">04.25.2021</p>
+						<p class="product-name">6 articles</p>
+					</div>
+					<p class="product-price">$ 120.00</p>
+					<a href=""><div class="path-icon"></div></a>
+				</div>
+
+				<div class="mini-card mini-card--total">
+					<div class="total-description">
+						<p class="product-price">04.25.2021</p>
+						<p class="product-name">6 articles</p>
+					</div>
+					<p class="product-price">$ 120.00</p>
+					<a href=""><div class="path-icon"></div></a>
+				</div>
+
+				<div class="mini-card mini-card--total">
+					<div class="total-description">
+						<p class="product-price">04.25.2021</p>
+						<p class="product-name">6 articles</p>
+					</div>
+					<p class="product-price">$ 120.00</p>
+					<a href=""><div class="path-icon"></div></a>
+				</div>
+
+				<div class="mini-card mini-card--total">
+					<div class="total-description">
+						<p class="product-price">04.25.2021</p>
+						<p class="product-name">6 articles</p>
+					</div>
+					<p class="product-price">$ 120.00</p>
+					<a href=""><div class="path-icon"></div></a>
+				</div>
+
+				<div class="mini-card mini-card--total">
+					<div class="total-description">
+						<p class="product-price">04.25.2021</p>
+						<p class="product-name">6 articles</p>
+					</div>
+					<p class="product-price">$ 120.00</p>
+					<a href=""><div class="path-icon"></div></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
