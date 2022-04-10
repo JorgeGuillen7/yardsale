@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Shopping cart</title>
+		<style>
+			:root {
+				--white: #ffffff;
+				--black: #000000;
+				--dark: #232830;
+				--very-light-pink: #c7c7c7;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--sm: 1.4rem;
+				--md: 1.6rem;
+				--lg: 1.8rem;
+				--card-size: 7.6rem;
+				--width-container: 38.4rem;
+			}
+
+			body {
+				font-family: 'Quicksand', sans-serif;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				font-size: 62.5%;
+			}
+
+			.shopping-cart-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: calc(100vh);
+				width: var(--width-container);
+				position: absolute;
+				right: 0;
+				padding: 2.4rem 1.8rem;
+				box-shadow: 0px 0px 6px 0px #0000001f;
+			}
+
+			.shopping-cart__items {
+				display: grid;
+				grid-template-rows: auto;
+				gap: 2.4rem;
+			}
+
+			.shopping-cart__items h3 {
+				margin-bottom: 1.3rem;
+				font-size: var(--lg);
+			}
+			.shopping-cart__items h3 img {
+				transform: rotate(180deg);
+				height: 1.4rem;
+				margin: 0 2.4rem 0 0.8rem;
+			}
+
+			.mini-card {
+				height: var(--card-size);
+				display: grid;
+				grid-template-columns: auto 1fr auto auto;
+				align-items: center;
+			}
+
+			.mini-card--product > img {
+				padding-left: 1.8rem;
+				height: 1.2rem;
+				cursor: pointer;
+			}
+
+			.mini-card--total {
+				background-color: var(--text-input-field);
+				padding: 0 2rem;
+				border-radius: 10px;
+				margin-bottom: 1.8rem;
+			}
+
+			.product-image {
+				border-radius: 20px;
+				height: var(--card-size);
+				width: var(--card-size);
+				overflow: hidden;
+				margin-right: 1.7rem;
+			}
+
+			.product-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+
+			.product-name {
+				font-size: var(--sm);
+				font-weight: 400;
+				color: var(--very-light-pink);
+			}
+
+			.product-price {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+					Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+					'Helvetica Neue', sans-serif;
+				font-size: var(--md);
+				font-weight: bold;
+				color: var(--dark);
+				justify-self: flex-end;
+			}
+
+			.button {
+				border-radius: 10px;
+				cursor: pointer;
+				font-size: var(--lg);
+				font-weight: bold;
+				height: 5.9rem;
+				width: 100%;
+			}
+
+			.button--primary {
+				border: none;
+				background-color: var(--hospital-green);
+				color: var(--white);
+			}
+
+			@media (max-width: 450px) {
+				.shopping-cart-container {
+					width: 100%;
+					min-width: 37.5rem;
+					position: static;
+				}
+
+				.shopping-cart-container h3 {
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<aside class="shopping-cart-container">
+			<div class="shopping-cart__items">
+				<h3>
+					<img
+						src="./assets/icons/flechita.svg"
+						alt="flechita atrás"
+					/>
+					Shopping cart
+				</h3>
+
+				<div class="mini-card mini-card--product">
+					<figure class="product-image">
+						<img
+							src="./assets/images/round-shelf.png"
+							alt="Round shelf"
+						/>
+					</figure>
+					<p class="product-name">Round shelf</p>
+					<p class="product-price">$ 120,00</p>
+					<img
+						src="./assets/icons/icon_close.png"
+						alt="eliminar artículo"
+					/>
+				</div>
+
+				<div class="mini-card mini-card--product">
+					<figure class="product-image">
+						<img
+							src="./assets/images/round-shelf.png"
+							alt="Round shelf"
+						/>
+					</figure>
+					<p class="product-name">Round shelf</p>
+					<p class="product-price">$ 120,00</p>
+					<img src="./assets/icons/icon_close.png" alt="icon close" />
+				</div>
+
+				<div class="mini-card mini-card--product">
+					<figure class="product-image">
+						<img
+							src="./assets/images/round-shelf.png"
+							alt="Round shelf"
+						/>
+					</figure>
+					<p class="product-name">Round shelf</p>
+					<p class="product-price">$ 120,00</p>
+					<img src="./assets/icons/icon_close.png" alt="icon close" />
+				</div>
+
+				<div class="mini-card mini-card--product">
+					<figure class="product-image">
+						<img
+							src="./assets/images/round-shelf.png"
+							alt="Round shelf"
+						/>
+					</figure>
+					<p class="product-name">Round shelf</p>
+					<p class="product-price">$ 120,00</p>
+					<img src="./assets/icons/icon_close.png" alt="icon close" />
+				</div>
+
+				<div class="mini-card mini-card--product">
+					<figure class="product-image">
+						<img
+							src="./assets/images/round-shelf.png"
+							alt="Round shelf"
+						/>
+					</figure>
+					<p class="product-name">Round shelf</p>
+					<p class="product-price">$ 120,00</p>
+					<img src="./assets/icons/icon_close.png" alt="icon close" />
+				</div>
+			</div>
+
+			<div class="shopping-cart__checkout">
+				<div class="mini-card mini-card--total">
+					<p class="product-price">Total</p>
+					<p class="product-price">$ 560.00</p>
+				</div>
+				<button class="button button--primary">Checkout</button>
+			</div>
+		</aside>
+	</body>
+</html>
